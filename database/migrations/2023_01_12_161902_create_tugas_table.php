@@ -14,10 +14,10 @@ return new class extends Migration
     public function up()
     {
         Schema::create('tugas__db', function (Blueprint $table) {
-            $table->increment('id');
+            $table->increments('id');
             $table->string('nama')->unique();
             $table->string('jenis kelamin');
-            $table->sring('alamat');
+            $table->string('alamat');
             $table->integer('semester');
             $table->timestamps();
         });
